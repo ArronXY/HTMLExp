@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>内容可编辑</title>
+</head>
+<body>
+<div contenteditable="true" style="width: 500px;border: 1px solid black">
+    <table style="width: 320px;border-collapse: collapse" border="1">
+        <tr>
+            <td>疯狂Java讲义</td>
+            <td>疯狂Android讲义</td>
+        </tr>
+        <tr>
+            <td>轻量级Java EE企业应用实战</td>
+            <td>经典Java EE企业应用实战</td>
+        </tr>
+    </table>
+</div>
+<hr>
+<table id="target" ondblclick="this.contentEditable=true;"
+       style="width: 420px;border-collapse: collapse" border="1">
+    <tr>
+        <td>Java</td>
+        <td>Ruby</td>
+    </tr>
+    <tr>
+        <td>C++</td>
+        <td>Python</td>
+    </tr>
+</table>
+</body>
+</html>
