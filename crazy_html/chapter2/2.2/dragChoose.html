@@ -46,7 +46,8 @@
     }
     document.getElementById("gb").ondrop=function(evt){
         var id=evt.dataTransfer.getData("text/plain");
-        if(text.indexOf("<remove>")==0){
+        console.log("id = "+id);
+        if(id.indexOf("<remove>")==0){
             var target=document.getElementById(id.substring(8));
             dest.removeChild(target);
         }

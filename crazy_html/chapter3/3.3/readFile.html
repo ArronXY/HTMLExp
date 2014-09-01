@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>读取文件示例</title>
+</head>
+<body>
+浏览文件<input id="file1" type="file"/><br>
+
+<div id="result"></div>
+<input type="button" value="读取文本文件" onclick="readText();"/><br>
+<input type="button" value="读取二进制文件" onclick="readBinary();"/><br>
+<input type="button" value="以DataUrl方式读取文件" onclick="readUrl();"/><br>
+<script type="application/javascript">
+    var reader=null;
+    if(FileReader){
+        reader=new FileReader();
+    }else{
+        alert('浏览器暂不支持FileReader');
+    }
+    var readText=function(){
+        console.log(document.getElementById("file1").files[0].type);
+        if(/text\/\w+/.test(document.getElementById("file1").files[0].type)){
+            reader.readAsText(document.getElementById("file1").files[0],"utf-8");
+            reader.onload=function(){
+                document.getElementById("result").innerHTML=reader.result;
+            };
+        }else{
+            alert('你选择的文件不是文本文件');
+        }
+    }
+</script>
+</body>
+</html>
