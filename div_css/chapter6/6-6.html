@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>日历</title>
+    <style>
+        .clmonth {
+            border-collapse: collapse;
+            width: 780px;
+        }
+
+        .clmonth caption {
+            text-align: left;
+            font: bold 130% Georgia, "Times New Roman";
+            padding-bottom: 6px;
+        }
+
+        .clmonth th {
+            border: 1px solid #999;
+            border-bottom: none;
+            padding: 2px 8px 2px 8px;
+            background-color: #d3d2a0;
+            color: #2f2f2f;
+            font: 80% Verdana, Geneva, Arial, Helvetica, sans-serif;
+        }
+
+        .clmonth td {
+            border: 1px solid #afafaf;
+            font: 80% Verdana, Geneva, Arial, Helvetica, sans-serif;
+            padding: 2px 4px 2px 4px;
+            vertical-align: top;
+        }
+
+        .clmonth ul {
+            list-style: none;
+            margin: 0px;
+            padding-left: 12px;
+            padding-right: 6px;
+        }
+
+        .clmonth li {
+            margin-bottom: 8px;
+        }
+
+        .clmonth td.previous, .clmonth td.next {
+            background-color: #f5f4e6;
+            color: #a6a6a6;
+        }
+
+        .clmonth td.active {
+            background-color: #b1cbe1;
+            color: #2b5070;
+            border: 2px solid #4682b4;
+        }
+
+    </style>
+</head>
+<body>
+<table class="clmonth" summary="Calendar for January 2007">
+    <caption>January 2007</caption>
+    <tr>
+        <th scope="col">Monday</th>
+        <th scope="col">Tuesday</th>
+        <th scope="col">Wednesday</th>
+        <th scope="col">Thursday</th>
+        <th scope="col">Friday</th>
+        <th scope="col">Saturday</th>
+        <th scope="col">Sunday</th>
+    </tr>
+    <tr>
+        <td class="previous">31</td>
+        <td class="active">1
+            <ul>
+                <li>五棵松摄影城买镜头</li>
+                <li>完成微积分作业</li>
+            </ul>
+        </td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+    </tr>
+</table>
+</body>
+</html>

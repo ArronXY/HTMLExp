@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Excel表格</title>
+    <style>
+        table.formdata {
+            border: 1px solid #5f6f7e;
+            border-collapse: collapse;
+            font-family: Arial;
+        }
+
+        table.formdata caption {
+            text-align: left;
+            padding-bottom: 6px;
+        }
+
+        table.formdata th {
+            border: 1px solid #5f6f7e;
+            background-color: #e2e2e2;
+            color: #000000;
+            text-align: left;
+            font-weight: normal;
+            padding: 2px 8px 2px 6px;
+            margin: 0px;
+        }
+
+        table.formdata td {
+            margin: 0px;
+            padding: 0px;
+            border: 1px solid #ababab;
+        }
+
+        table.formdata input {
+            width: 100px;
+            padding: 1px 3px 1px 3px;
+            margin: 0px;
+            border: none;
+            font: Arial;
+        }
+
+        .btn {
+            border: 1px solid #0083f2;
+            font-family: Arial;
+        }
+    </style>
+</head>
+<body>
+<form method="post">
+    <table class="formdata">
+        <caption>公司销售统计表2004-2007</caption>
+        <tr>
+            <th></th>
+            <th scope="col">2004</th>
+            <th scope="col">2005</th>
+            <th scope="col">2006</th>
+            <th scope="col">2007</th>
+        </tr>
+        <tr>
+            <th scope="row">硬盘(Hard Disk)</th>
+            <td><input type="text" name="harddisk2004" id="harddisk2004"></td>
+            <td><input type="text" name="harddisk2005" id="harddisk2005"></td>
+            <td><input type="text" name="harddisk2006" id="harddisk2006"></td>
+            <td><input type="text" name="harddisk2007" id="harddisk2007"></td>
+        </tr>
+    </table>
+    <p><input type="submit" name="btnSubmit" id="btnSubmit" value="Add Data" class="btn">
+        <input type="reset" value="Reset All" class="btn"></p>
+</form>
+</body>
+</html>
