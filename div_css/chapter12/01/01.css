@@ -1,0 +1,194 @@
+body {
+    background-color: #ebf7ff;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+#container {
+    position: relative;
+    margin: 1px auto 0px auto;
+    width: 880px;
+    text-align: left;
+}
+
+#globallink {
+    width: 880px;
+    height: 210px;
+    background: url(banner.jpg) no-repeat #ebf7ff;
+    font-size: 12px;
+}
+
+#globallink ul {
+    list-style-type: none;
+    position: absolute;
+    display: inline;
+    width: 417px;
+    left: 468px;
+    top: 180px;
+    padding: 0px;
+    margin: 0px;
+}
+
+#globallink ul li {
+    float: left;
+    text-align: center;
+}
+
+#globallink ul li#one, #globallink ul li#two, #globallink ul li#three {
+    width: 57px;
+}
+
+#globallink ul li#four, #globallink ul li#five, #globallink ul li#six {
+    width: 78px;
+}
+
+#globallink a:link, #globallink a:visited {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+#globallink a:hover {
+    color: #004c84;
+    text-decoration: none;
+}
+
+#parameter {
+    position: relative;
+    float: right;
+    font-size: 12px;
+    width: 176px;
+    padding-right: 0px;
+    margin: 0px;
+    color: #FEFEFE;
+    background-color: #0084a9;
+}
+
+#parameter div {
+    margin-bottom: 15px;
+}
+
+#parameter br {
+    clear: both;
+    display: none;
+}
+
+#parameter h3 span {
+    display: none;
+}
+
+#parameter a:link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#parameter a:visited {
+    color: #eeeeee;
+    text-decoration: none;
+}
+
+#parameter a:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+#parameter a.author1:link {
+    color: #39d3ff;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+#parameter a.author1:visited {
+    color: #37d2fc;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+#parameter a.author1:hover {
+    color: #14889d;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+#lhotblog span a, #lrecent span a, #lapply span a {
+    float: right;
+    text-align: right;
+    padding-top: 8px;
+    padding-right: 5px;
+    margin-bottom: 5px;
+}
+
+#lstatistics h3 {
+    background: url("lstatistics.jpg") no-repeat;
+}
+
+#lhotblog h3 {
+    background: url("lhotblog.jpg") no-repeat;
+}
+
+#lrecent h3 {
+    background: url("lrecent.jpg") no-repeat;
+}
+
+#lapply h3 {
+    background: url("lapply.jpg") no-repeat;
+}
+
+#lstatistics, #lhotblog, #lrecent, #lapply {
+    position: relative;
+    clear: both;
+}
+
+#lstatistics ul, #lhotblog ul, #lrecent ul, #lapply ul {
+    list-style-type: none;
+    padding: 10px 0px 0px 0px;
+    margin: 0px;
+}
+
+#lstatistics li {
+    text-align: left;
+    padding-left: 16px;
+    line-height: 17px;
+    background: url("arrow1.gif") no-repeat 7px 4px;
+}
+
+#lhotblog li {
+    text-align: left;
+    padding-left: 14px;
+    line-height: 17px;
+    background: url("arrow2.gif") no-repeat 7px 4px;
+}
+
+#lrecent li, #lapply li {
+    text-align: left;
+    padding-left: 14px;
+    line-height: 17px;
+    background: url("arrow3.gif") no-repeat 7px 4px;
+}
+
+#parameter h3 {
+    height: 30px;
+    width: 176px;
+    padding: 0px;
+    margin: 0px;
+}
+
+#mainsupport {
+    float: left;
+    position: relative;
+    font-size: 12px;
+    margin-top: 0px;
+    margin-bottom: 60px;
+    margin-right: 0px;
+}
+
+#footer {
+    clear: both;
+    font-size: 12px;
+    text-align: center;
+    color: #226c81;
+    padding-bottom: 20px;
+    margin: 0px;
+    padding-top: 20px;
+    background-color: #ebf7ff;
+}
